@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+
+/*início da estilização para a barra superior de navegação*/
+header {
+    display: flex;
+    align-items: center;
+    background: #007bff;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; 
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffc107;
+}
+/*final da estilização para a barra superior de navegação*/
+
+
+/*início da estilização para  o "bem-vindo"*/
+.titulo-index {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px;
+}
+
+.img-index {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: 30%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+/*final da estilização para  o "bem-vindo"*/
+
+.skills {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    margin: 100px;
+}
+
+/*inicio de projetos*/
+.titulo-project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px;
+    margin-top: 30px;
+}
+
+.project-item {
+    align-items: right;
+    margin: 50px;
+}
+
+.gallery-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px;
+    margin-bottom: 20px;
+
+}
+
+.img-gallery-1 {
+    height: 30%;
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.img-gallery-1:hover {
+    transform: scale(1.05);
+}
+
+.gallery-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px;
+    margin-top: 20px;
+}
+
+.img-gallery-2 {
+    height: 30%;
+    width: 30%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.img-gallery-2:hover {
+    transform: scale(1.05);
+} 
+/*final de projetos*/
+
+
+.titulo-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 100px;
+    margin-top: 30px;
+}
+
+.contact {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 100px;
+}
+
+.map {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*geral*/
+h2, h3 {
+    color: #343a40;
+}
+
+/*inicial do contener "habilidades" da página inicial*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+/*final do contener "habilidades" da página inicial*/
+
+
+/*inicio do formulário*/
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/*final do formulário*/
+
+
+/*inicil do botão do formulário*/
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 15px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+/*final do botão do formulário*/
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media img {
+    width: 40px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+.social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #343a40;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.social-media a:hover{
+    color: #ffc107;
+}
